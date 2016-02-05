@@ -9,6 +9,7 @@ python-memcache (1.57-1) unstable; urgency=medium
   * Added More_Python_3_fixes.patch.
   * Cleans setup-test-env-memcached.sh from unused function wait_for_line.
   * Testing with all versions of Python(3).
+  * Fixed debian/copyright ordering.
 
  -- Thomas Goirand <zigo@debian.org>  Fri, 05 Feb 2016 08:12:59 +0000
 

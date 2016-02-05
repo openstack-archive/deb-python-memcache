@@ -3,15 +3,15 @@ Upstream-Name: python-memcached
 Upstream-Contact: Sean Reifschneider <jafo@tummy.com>
 Source: git://github.com/linsomniac/python-memcached.git
 
-Files: debian/*
-Copyright: (c) 2008-2013, Christopher Schmidt <crschmidt@metacarta.com>
-           (c) 2014, Thomas Goirand <zigo@debian.org>
-License: BSD-3-clause
-
 Files: *
 Copyright: (c) 2003-2014, Danga Interactive
            (c) 2013-2014, Sean Reifschneider <jafo@tummy.com>
 License: PSF-2
+
+Files: debian/*
+Copyright: (c) 2008-2013, Christopher Schmidt <crschmidt@metacarta.com>
+           (c) 2014-2016, Thomas Goirand <zigo@debian.org>
+License: BSD-3-clause
 
 License: PSF-2
  PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
