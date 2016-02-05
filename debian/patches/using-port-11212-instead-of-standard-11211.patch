@@ -1,0 +1,19 @@
+Description: Do not use memcache standard port
+ Because of the way we run tests in Debian, it's advised not to use the
+ standard port of memcached, so we can run another (test specific) instance
+ of memcached.
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: not-needed
+Last-Update: 2015-04-24
+
+--- python-memcache-1.54+20150423+git+48e882719c.orig/tests/test_memcache.py
++++ python-memcache-1.54+20150423+git+48e882719c/tests/test_memcache.py
+@@ -35,7 +35,7 @@ class FooStruct(object):
+ class TestMemcache(TestCase):
+     def setUp(self):
+         # TODO: unix socket server stuff
+-        servers = ["127.0.0.1:11211"]
++        servers = ["127.0.0.1:11212"]
+         self.mc = Client(servers, debug=1)
+         pass
+ 

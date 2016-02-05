@@ -1,0 +1,2 @@
+version=3
+https://github.com/linsomniac/python-memcached/tags .*/release-(\d[\d\.]+)\.tar\.gz

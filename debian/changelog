@@ -1,0 +1,137 @@
+python-memcache (1.57-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Moving the package to PKG OpenStack as I don't have write access to the
+    DPMT repository anymore.
+  * Switch the homepage to the Github URL.
+  * Switch the watch file to use the github tags, as the upstream FTP is never
+    updated.
+  * Added More_Python_3_fixes.patch.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 05 Feb 2016 08:12:59 +0000
+
+python-memcache (1.56-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Full upstream Python 3 support: deleting debian patches applied upstream.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 27 Jul 2015 13:23:00 +0000
+
+python-memcache (1.54+20150423+git+48e882719c-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 08 May 2015 20:59:58 +0000
+
+python-memcache (1.54+20150423+git+48e882719c-1) experimental; urgency=medium
+
+  * Added patch from Victor Stinner to port the package to Python 3.
+  * Now runs unit tests when building the package:
+    - Build-Depends: memcached, nose, six.
+    - Added nose as build-depends, and run unit tests.
+    - Added debian/setup-test-env-memcached.sh to start memcached on
+      non-standard port (which is compatible with building with sbuild).
+  * Standards-Version: 3.9.6.
+  * Added dh-python as build-depends.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 23 Apr 2015 21:47:37 +0000
+
+python-memcache (1.53+2014.06.08.git.918e88c496-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Removed now useless X-Python-Version: >= 2.6.
+  * Upgraded to debhelper and compat 9.
+  * Added Python3 support.
+  * debian/copyright file now using parseable format 1.0.
+  * Added myself as uploader.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 09 Jun 2014 09:25:03 +0000
+
+python-memcache (1.53-1) unstable; urgency=low
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+  [ Carl Chenet ]
+  * New upstream release
+  * debian/control
+    - bump Standards-Version to 3.9.4.0
+    - use python-all in B-D
+
+ -- Carl Chenet <chaica@ohmytux.com>  Wed, 19 Jun 2013 23:02:23 +0200
+
+python-memcache (1.48-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/control
+    - bump X-Python-Version >= 2.6
+    - bump Standards-Version to 3.9.2.0
+    - removed ${python:Breaks} to binary package info
+  * debian/rules
+    - add override_dh_auto_build to remove Makefile
+
+ -- Carl Chenet <chaica@ohmytux.com>  Wed, 07 Dec 2011 23:30:42 +0100
+
+python-memcache (1.47-1) unstable; urgency=low
+
+  * New upstream release. (Closes: #609908)
+  * debian/source/format
+    - Bump to 3.0 (quilt)
+  * debian/control
+    - Removed python-support from Build-Depends-Indep
+    - Bump python to 2.6.6-3
+    - Bump Standards-Version to 3.9.1.0.
+    - Replaced XS-Python-Version: all by X-Python-Version >= 2.5
+    - Added Breaks: ${python:Breaks} to binary package info
+  * debian/copyright
+    - Removed path to BSD license and include the license text itself
+  * debian/rules
+    - Replaced dh $@ by dh $@ --with python2
+
+ -- Carl Chenet <chaica@ohmytux.com>  Thu, 17 Feb 2011 01:30:02 +0100
+
+python-memcache (1.45-1) unstable; urgency=low
+
+  * New upstream version.
+  * debian/control
+    - Switched the Maintainer field to DPMT.
+    - Switched the Uploader field to Carl Chenet <chaica@ohmytux.com>.
+    - Bump the Standards-Version field to 3.8.4
+
+ -- Carl Chenet <chaica@ohmytux.com>  Tue, 02 Feb 2010 20:42:02 +0100
+
+python-memcache (1.44-1) unstable; urgency=low
+
+  * New upstream version.
+  * debian/control
+    - bump Standards-Version to 3.8.3
+    - bump required python version.
+  * debian/watch
+    - added the pasv option. 
+  * debian/copyright
+    - Modified (C) to ©.
+  * debian rules
+    - Using minimal dh7 now.
+  * debian/compat
+    - Bump to 7.
+
+ -- Carl Chenet <chaica@ohmytux.com>  Tue, 22 Sep 2009 01:20:31 +0200
+
+python-memcache (1.40-2) unstable; urgency=medium
+
+  * debian/control
+    - switch Vcs-Browser field to viewsvn
+    - bump Standards-Version to 3.8.1 (no changes needed)
+  * debian/watch
+    - fixed (upstream ftp site uses symlinks, breaking version check)
+  * debian/rules
+    - fixed for the new python-support; thanks to Josselin Mouette for the
+      report and patch; Closes: #517063
+
+ -- Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>  Fri, 10 Apr 2009 12:58:57 +0200
+
+python-memcache (1.40-1) unstable; urgency=low
+
+  * Initial release. (Closes: #458608)
+
+ -- Christopher Schmidt <crschmidt@metacarta.com>  Thu,  3 Jan 2008 18:47:00 -0500
