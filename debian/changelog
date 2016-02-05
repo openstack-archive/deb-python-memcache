@@ -7,6 +7,7 @@ python-memcache (1.57-1) unstable; urgency=medium
   * Switch the watch file to use the github tags, as the upstream FTP is never
     updated.
   * Added More_Python_3_fixes.patch.
+  * Cleans setup-test-env-memcached.sh from unused function wait_for_line.
 
  -- Thomas Goirand <zigo@debian.org>  Fri, 05 Feb 2016 08:12:59 +0000
 
