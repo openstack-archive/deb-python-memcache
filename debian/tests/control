@@ -1,1 +1,3 @@
 Test-Command: python -c "import memcache; print memcache.__version__"
+
+Test-Command: python3 -c "import memcache; print(memcache.__version__)"
