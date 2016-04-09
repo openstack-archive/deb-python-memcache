@@ -2,6 +2,7 @@ python-memcache (1.57-2) UNRELEASED; urgency=medium
 
   * Standards-Version is 3.9.7 now (no change).
   * Added Debian tests.
+  * Standards-Version is 3.9.8 now (no change)
 
  -- Ondřej Nový <novy@ondrej.org>  Sat, 27 Feb 2016 18:44:10 +0100
 
