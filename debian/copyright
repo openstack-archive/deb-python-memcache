@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: python-memcached
 Upstream-Contact: Sean Reifschneider <jafo@tummy.com>
-Source: git://github.com/linsomniac/python-memcached.git
+Source: https://github.com/linsomniac/python-memcached
 
 Files: *
 Copyright: (c) 2003-2014, Danga Interactive
