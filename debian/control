@@ -16,8 +16,8 @@ Build-Depends-Indep: memcached,
                      python3-nose,
                      python3-six,
 Standards-Version: 3.9.8
-Vcs-Git: https://anonscm.debian.org/git/openstack/python-memcache.git
-Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python-memcache.git/
+Vcs-Git: https://git.openstack.org/openstack/deb-python-memcache -b debian/newton
+Vcs-Browser: https://git.openstack.org/cgit/openstack/deb-python-memcache?h=debian%2Fnewton
 Homepage: https://github.com/linsomniac/python-memcached
 
 Package: python-memcache
