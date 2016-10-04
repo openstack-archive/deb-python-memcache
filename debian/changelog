@@ -1,4 +1,4 @@
-python-memcache (1.57-2) UNRELEASED; urgency=medium
+python-memcache (1.57-2) unstable; urgency=medium
 
   * Standards-Version is 3.9.7 now (no change).
   * Added Debian tests.
